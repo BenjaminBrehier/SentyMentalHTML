@@ -1,7 +1,6 @@
 # SentyMental
 <img src="./SentyMental.png"
-     alt="SentyMental logo"
-     style="float: left; margin-right: 10px;" />
+     alt="SentyMental logo"/>
 SentyMental est site vitrine marchand.
 
 C'est le résultat d'un projet de première année de DUT Informatique, celui-ci consistait à concevoir et créer un site internet (non fonctionnel) pour exposer les produits proposé par la marque.
