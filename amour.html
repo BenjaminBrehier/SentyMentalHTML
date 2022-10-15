@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!--En-tête de la page-->
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Sentymental">
+    <meta name="description" content="Sentymental est le premier site français qui permet les particuliers de commander n'importe quel sentiment dans notre catalogue en toute simplicité.">
+    <meta name="keywords" content="sentiments, sentymental, acheter">
+    <meta name="robots" content="
+        index, nofollow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="French">
+    <meta name="revisit-after" content="30 days">
+    <meta name="author" content="Benjamin BREHIER-CARDOSO, Clement GERAUDIE, Rafael BITCA">
+    <title>Articles | Sentymental</title>
+    <link rel="stylesheet" href="ressources/styles/css/reset.css">
+    <link rel="stylesheet" href="ressources/styles/css/all.css">
+    <link rel="stylesheet" href="ressources/styles/fa/css/all.min.css">
+    <script src="ressources/scripts/js/index.js"></script>
+    <script src="ressources/scripts/js/panier.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="ressources/styles/css/articles.css">
+    <link rel="icon" type="image/ico" href="favicon.ico">
+</head>
+<!--Corps de la page-->
+
+<body onload="loadpage(); loadPurchase();">
+    <!--Header de la page-->
+
+    <header>
+        <div id="logo">
+            <a href="index.html"><span style="color:#F08080;">SENTY</span><span style="color:#FFFFFF;">MENTAL</span></a>
+        </div>
+        <div class="menuicon">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+            <ul>
+                <li><a id="accueil" href="#">Accueil</a>
+                    <div class="dd-a">
+                        <a href="index.html#">Page principale</a>
+                        <a href="index.html#apropos">À propos de nous</a>
+                        <a href="index.html#contact">Informations générales</a>
+                    </div>
+                </li>
+                <li><a id="produits" href="#">Produits</a>
+                    <div class="dd-p">
+                        <a id="categories" href="categories.html">Catégories</a>
+                        <a id="promotion" href="promotion.html">Promotion</a>
+                    </div>
+                </li>
+                <li><a id="assistance" href="assistance.html">Assistance</a></li>
+                <li><a id="panier" href="panier.html">Mon Panier <i class="fas fa-shopping-basket"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="whitespace"></div>
+    <menu>
+        <li><a id="accueil_m" href="#">Accueil</a></li>
+        <li class="tiny"><a id="landing_m" href="index.html#">Page principale</a></li>
+        <li class="tiny"><a id="apropos_m" href="index.html#apropos">À propos de nous</a></li>
+        <li class="tiny"><a id="contact_m" href="index.html#contact">Informations générales</a></li>
+        <li><a id="produits_m" href="#">Produits</a></li>
+        <li class="tiny"><a id="categories_m" href="categories.html">Catégories</a></li>
+        <li class="tiny"><a id="promotion_m" href="promotion.html">Promotion</a></li>
+        <li><a id="assistance_m" href="assistance.html">Assistance</a></li>
+        <li><a id="panier_m" href="panier.html">Mon Panier</a></li>
+    </menu>
+    <div id="articles">
+
+        <div class="bloc_article">
+            <h1>Amour</h1>
+            <p>Vous voulez être amoureux mais vous n'arrivez pas à l'être ? Nous avons ce qu'il vous faut !</p>
+            <!-- NOTE: REMPLACER BR PAR PROPRIÈTÈ CSS -->
+            <br>
+            <br>
+            <div>
+                <span class="vieux_prix"><del>107,62€</del></span><span class="nouveau_prix">85,52€</span>
+                <a class="button" href="#popup0">Plus d'infos</a>
+            </div>
+        </div>
+
+        <div id="popup0" class="overlay">
+            <div class="popup">
+                <a class="close" href="#">×</a>
+                <div class="content">
+                    <img alt="Image illustrative du sentiment Amour" width="200" height="200" src="https://cdn.pixabay.com/photo/2017/03/01/18/09/heart-2109237_960_720.png">
+                    <p>Vous cherchez un peu du sentiment Amour ? Vous êtes au bon endroit !</p>
+                    <button onclick="setProductInCookies('Amour','85,52','11')">
+                        Ajouter produit au panier
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="bloc_article">
+            <h1>Attendrissement</h1>
+            <p>Vous voulez être attendri mais vous n'arrivez pas à l'être ? Nous avons ce qu'il vous faut !</p>
+            <!-- NOTE: REMPLACER BR PAR PROPRIÈTÈ CSS -->
+            <br>
+            <br>
+            <div>
+                <span class="prix">98,49€</span>
+                <a class="button" href="#popup1">Plus d'infos</a>
+            </div>
+        </div>
+
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <a class="close" href="#">×</a>
+                <div class="content">
+                    <img alt="Image illustrative du sentiment Attendrissement" width="200" height="200" src="https://cdn.pixabay.com/photo/2017/08/07/12/49/people-2603521_960_720.jpg">
+                    <p>Vous cherchez un peu du sentiment Attendrissement ? Vous êtes au bon endroit !</p>
+                    <button onclick="setProductInCookies('Attendrissement','98,49','15')">
+                        Ajouter produit au panier
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="bloc_article">
+            <h1>Charme</h1>
+            <p>Vous voulez avoir du charme mais vous n'arrivez pas à en avoir ? Nous avons ce qu'il vous faut !</p>
+            <!-- NOTE: REMPLACER BR PAR PROPRIÈTÈ CSS -->
+            <br>
+            <br>
+            <div>
+                <span class="vieux_prix"><del>57,04€</del></span><span class="nouveau_prix">51,59€</span>
+                <a class="button" href="#popup2">Plus d'infos</a>
+            </div>
+        </div>
+
+        <div id="popup2" class="overlay">
+            <div class="popup">
+                <a class="close" href="#">×</a>
+                <div class="content">
+                    <img alt="Image illustrative du sentiment Charme" width="200" height="200" src="https://cdn.pixabay.com/photo/2016/06/26/08/27/ladybug-1480102_960_720.jpg">
+                    <p>Vous cherchez un peu du sentiment Charme ? Vous êtes au bon endroit !</p>
+                    <button onclick="setProductInCookies('Charme','51,59','20')">
+                        Ajouter produit au panier
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="bloc_article">
+            <h1>Comblé</h1>
+            <p>Vous voulez être comblé mais vous n'arrivez pas à l'être ? Nous avons ce qu'il vous faut !</p>
+            <!-- NOTE: REMPLACER BR PAR PROPRIÈTÈ CSS -->
+            <br>
+            <br>
+            <div>
+                <span class="vieux_prix"><del>116,76€</del></span><span class="nouveau_prix">82,77€</span>
+                <a class="button" href="#popup3">Plus d'infos</a>
+            </div>
+        </div>
+
+        <div id="popup3" class="overlay">
+            <div class="popup">
+                <a class="close" href="#">×</a>
+                <div class="content">
+                    <img alt="Image illustrative du sentiment Comblé" width="200" height="200" src="https://cdn.pixabay.com/photo/2014/04/02/17/05/couple-307924_960_720.png">
+                    <p>Vous cherchez un peu du sentiment Comblé ? Vous êtes au bon endroit !</p>
+                    <button onclick="setProductInCookies('Comblé','82,77','22')">
+                        Ajouter produit au panier
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="bloc_article">
+            <h1>Émotion</h1>
+            <p>Vous voulez être ému mais vous n'arrivez pas à l'être ? Nous avons ce qu'il vous faut !</p>
+            <!-- NOTE: REMPLACER BR PAR PROPRIÈTÈ CSS -->
+            <br>
+            <br>
+            <div>
+                <span class="vieux_prix"><del>65,34€</del></span><span class="nouveau_prix">56,70€</span>
+                <a class="button" href="#popup4">Plus d'infos</a>
+            </div>
+        </div>
+
+        <div id="popup4" class="overlay">
+            <div class="popup">
+                <a class="close" href="#">×</a>
+                <div class="content">
+                    <img alt="Image illustrative du sentiment Émotion" width="200" height="200" src="https://cdn.pixabay.com/photo/2017/11/26/15/16/smiley-2979107_960_720.jpg">
+                    <p>Vous cherchez un peu du sentiment Émotion ? Vous êtes au bon endroit !</p>
+                    <button onclick="setProductInCookies('Émotion','56,70','48')">
+                        Ajouter produit au panier
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="bloc_article">
+            <h1>En sécurité </h1>
+            <p>Vous voulez être en sécurité mais vous n'arrivez pas à l'être ? Nous avons ce qu'il vous faut !</p>
+            <!-- NOTE: REMPLACER BR PAR PROPRIÈTÈ CSS -->
+            <br>
+            <br>
+            <div>
+                <span class="prix">103,17€</span>
+                <a class="button" href="#popup5">Plus d'infos</a>
+            </div>
+        </div>
+
+        <div id="popup5" class="overlay">
+            <div class="popup">
+                <a class="close" href="#">×</a>
+                <div class="content">
+                    <img alt="Image illustrative du sentiment En sécurité " width="200" height="200" src="https://cdn.pixabay.com/photo/2014/02/13/07/28/security-265130_960_720.jpg">
+                    <p>Vous cherchez un peu du sentiment En sécurité ? Vous êtes au bon endroit !</p>
+                    <button onclick="setProductInCookies('En sécurité ','103,17','50')">
+                        Ajouter produit au panier
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="bloc_article">
+            <h1>Enchantement</h1>
+            <p>Vous voulez être enchanté mais vous n'arrivez pas à l'être ? Nous avons ce qu'il vous faut !</p>
+            <!-- NOTE: REMPLACER BR PAR PROPRIÈTÈ CSS -->
+            <br>
+            <br>
+            <div>
+                <span class="vieux_prix"><del>89,08€</del></span><span class="nouveau_prix">71,24€</span>
+                <a class="button" href="#popup6">Plus d'infos</a>
+            </div>
+        </div>
+
+        <div id="popup6" class="overlay">
+            <div class="popup">
+                <a class="close" href="#">×</a>
+                <div class="content">
+                    <img alt="Image illustrative du sentiment Enchantement" width="200" height="200" src="https://cdn.pixabay.com/photo/2015/11/18/15/44/france-1049333_960_720.jpg">
+                    <p>Vous cherchez un peu du sentiment Enchantement ? Vous êtes au bon endroit !</p>
+                    <button onclick="setProductInCookies('Enchantement','71,24','51')">
+                        Ajouter produit au panier
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="bloc_article">
+            <h1>Encouragement</h1>
+            <p>Vous voulez être encouragé mais vous n'arrivez pas à l'être ? Nous avons ce qu'il vous faut !</p>
+            <!-- NOTE: REMPLACER BR PAR PROPRIÈTÈ CSS -->
+            <br>
+            <br>
+            <div>
+                <span class="prix">116,98€</span>
+                <a class="button" href="#popup7">Plus d'infos</a>
+            </div>
+        </div>
+
+        <div id="popup7" class="overlay">
+            <div class="popup">
+                <a class="close" href="#">×</a>
+                <div class="content">
+                    <img alt="Image illustrative du sentiment Encouragement" width="200" height="200" src="https://cdn.pixabay.com/photo/2015/06/22/23/32/articulated-male-818202_960_720.jpg">
+                    <p>Vous cherchez un peu du sentiment Encouragement ? Vous êtes au bon endroit !</p>
+                    <button onclick="setProductInCookies('Encouragement','116,98','52')">
+                        Ajouter produit au panier
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="bloc_article">
+            <h1>Optimisme</h1>
+            <p>Vous voulez être optimiste mais vous n'arrivez pas à l'être ? Nous avons ce qu'il vous faut !</p>
+            <!-- NOTE: REMPLACER BR PAR PROPRIÈTÈ CSS -->
+            <br>
+            <br>
+            <div>
+                <span class="vieux_prix"><del>58,08€</del></span><span class="nouveau_prix">54,60€</span>
+                <a class="button" href="#popup8">Plus d'infos</a>
+            </div>
+        </div>
+
+        <div id="popup8" class="overlay">
+            <div class="popup">
+                <a class="close" href="#">×</a>
+                <div class="content">
+                    <img alt="Image illustrative du sentiment Optimisme" width="200" height="200" src="https://cdn.pixabay.com/photo/2016/10/07/19/05/girl-1722402_960_720.jpg">
+                    <p>Vous cherchez un peu du sentiment Optimisme ? Vous êtes au bon endroit !</p>
+                    <button onclick="setProductInCookies('Optimisme','54,60','88')">
+                        Ajouter produit au panier
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="bloc_article">
+            <h1>Paisible </h1>
+            <p>Vous voulez être paisible mais vous n'arrivez pas à l'être ? Nous avons ce qu'il vous faut !</p>
+            <!-- NOTE: REMPLACER BR PAR PROPRIÈTÈ CSS -->
+            <br>
+            <br>
+            <div>
+                <span class="vieux_prix"><del>112,76€</del></span><span class="nouveau_prix">84,82€</span>
+                <a class="button" href="#popup9">Plus d'infos</a>
+            </div>
+        </div>
+
+        <div id="popup9" class="overlay">
+            <div class="popup">
+                <a class="close" href="#">×</a>
+                <div class="content">
+                    <img alt="Image illustrative du sentiment Paisible " width="200" height="200" src="https://cdn.pixabay.com/photo/2018/05/24/09/39/dove-3426159_960_720.jpg">
+                    <p>Vous cherchez un peu du sentiment Paisible ? Vous êtes au bon endroit !</p>
+                    <button onclick="setProductInCookies('Paisible ','84,82','89')">
+                        Ajouter produit au panier
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="bloc_article">
+            <h1>Rassuré </h1>
+            <p>Vous voulez être rassurant mais vous n'arrivez pas à l'être ? Nous avons ce qu'il vous faut !</p>
+            <!-- NOTE: REMPLACER BR PAR PROPRIÈTÈ CSS -->
+            <br>
+            <br>
+            <div>
+                <span class="prix">97,59€</span>
+                <a class="button" href="#popup10">Plus d'infos</a>
+            </div>
+        </div>
+
+        <div id="popup10" class="overlay">
+            <div class="popup">
+                <a class="close" href="#">×</a>
+                <div class="content">
+                    <img alt="Image illustrative du sentiment Rassuré " width="200" height="200" src="https://cdn.pixabay.com/photo/2015/01/07/15/51/woman-591576_960_720.jpg">
+                    <p>Vous cherchez un peu du sentiment Rassuré ? Vous êtes au bon endroit !</p>
+                    <button onclick="setProductInCookies('Rassuré ','97,59','94')">
+                        Ajouter produit au panier
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="bloc_article">
+            <h1>Ravi </h1>
+            <p>Vous voulez être ravi mais vous n'arrivez pas à l'être ? Nous avons ce qu'il vous faut !</p>
+            <!-- NOTE: REMPLACER BR PAR PROPRIÈTÈ CSS -->
+            <br>
+            <br>
+            <div>
+                <span class="vieux_prix"><del>80,17€</del></span><span class="nouveau_prix">68,21€</span>
+                <a class="button" href="#popup11">Plus d'infos</a>
+            </div>
+        </div>
+
+        <div id="popup11" class="overlay">
+            <div class="popup">
+                <a class="close" href="#">×</a>
+                <div class="content">
+                    <img alt="Image illustrative du sentiment Ravi " width="200" height="200" src="https://cdn.pixabay.com/photo/2017/03/22/19/11/baby-2166101_960_720.jpg">
+                    <p>Vous cherchez un peu du sentiment Ravi ? Vous êtes au bon endroit !</p>
+                    <button onclick="setProductInCookies('Ravi ','68,21','95')">
+                        Ajouter produit au panier
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="buttons">
+        <button onclick="location.href='http://codin.iut-orsay.fr/~rafael.bitca/joie.html';">Page précédente</button>
+    </div>
+    <footer>
+        <div id="footerlogo">
+            <span style="color:#F08080;">SENTY</span><span style="color:#FFFFFF;">MENTAL</span>
+        </div>
+        <div id="footertexte">
+            <p>
+                Sentymental est un projet créé par Benjamin BREHIER--CARDOSO, Clément GERAUDIE et Denise BITCA dans le cadre du module CODIN
+                à l'IUT d'Orsay. <a target="_blank" href="rapport.pdf">Cliquez ici</a> pour retrouver notre rapport à propos de la création
+                du projet et <a target="_blank" href="presentation.pdf">cliquez ici</a> pour retrouver notre présentation.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

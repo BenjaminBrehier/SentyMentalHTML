@@ -1,0 +1,258 @@
+/*
+
+    Dernière édition le : 05-01-2021
+    Par : Raf
+*/
+
+/*Articles*/
+
+body {
+    background-color: #FDBFB7;
+}
+
+h1 {
+    font-size: 5vw;
+    margin: 2.5vw 0px 2.5vw 0px;
+}
+
+p {
+    font-size: 1.5vw;
+}
+
+/*Header*/
+header>nav>ul>li>a {
+    color: black;
+}
+
+header {
+    z-index: 0;
+}
+
+.categoryname {
+    text-decoration: none;
+    color: black;
+}
+
+/*button*/
+
+.button {
+    text-decoration: none;
+    color: black;
+}
+
+.button:hover {
+    text-decoration: underline;
+}
+
+#buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row;
+}
+
+#buttons>button {
+    padding: 10px;
+    width: auto;
+    color: black;
+    border-radius: 5px;
+    border: 1px black solid;
+    background-color: #FF5673;
+    transition: 0.5s;
+    font-size: 1.5vw;
+    margin: 2.5vw;
+    cursor: pointer;
+}
+
+
+.consigne {
+    font-size: 3vw;
+    font-family: "Questrial", Arial, Helvetica, sans-serif;
+}
+
+/*Popup*/
+
+.overlay {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 50%;
+    background-color: pink;
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+    float: right;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover {
+    color: #FF5673;
+}
+
+.popup .content {
+    height: 100%;
+    overflow-x: auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*.popup .content button {
+    padding: 2px;
+    width: 25%;
+    font-size: 1vw;
+    font-family: arial, sans-serif;
+    font-weight: 700;
+    position: relative;
+    color: black;
+    z-index: 0;
+    border: 1px solid pink;
+    border-radius: 5px;
+    background: pink;
+    overflow: hidden;
+    text-decoration: none;
+    transition: 0.5s;
+    display: flex;
+    margin-left: 40%;
+    margin-top: 40%;
+}
+
+.popup .content button:hover {
+    background-color: #FF5673;
+    color: black;
+    transition: 0.5s;
+    cursor: pointer;
+}*/
+
+.popup .content button {
+    padding: 10px;
+    width: auto;
+    color: black;
+    border-radius: 5px;
+    border: 1px black solid;
+    background-color: #FF5673;
+    transition: 0.5s;
+    font-size: 1.5vw;
+    margin: 2.5vw;
+    cursor: pointer;
+}
+
+.content img {
+    margin: 50px 0px;
+}
+
+.bloc_article {
+    font-family: "Questrial", Arial, sans-serif;
+    text-align: center;
+}
+
+.bloc_article>div {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #CF0A1D;
+}
+
+/*Prix*/
+.vieux_prix {
+    font-size: 80%;
+}
+
+.nouveau_prix {
+    font-size: 150%;
+}
+
+.prix {
+    font-size: 150%;
+}
+
+
+/*Appels media*/
+@media screen and (min-width: 950px) {
+    #articles {
+        width: 100%;
+        min-height: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        z-index: 0;
+        padding-bottom: 4vw;
+    }
+
+    .bloc_article {
+        background-color: rgb(233, 136, 79);
+        width: 33%;
+        margin: 5px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 0px 0px grey;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .consigne {
+        font-size: 7vw;
+    }
+
+    .bloc_article {
+        background-color: rgb(233, 136, 79);
+        padding: 10px;
+        border-bottom: 0.5vw black solid;
+    }
+
+    h1 {
+        font-size: 10vw;
+        margin: 2.5vw 0px 2.5vw 0px;
+    }
+
+    p {
+        font-size: 4vw;
+    }
+
+    #buttons>button,
+    .popup>.content>button {
+        font-size: 5vw;
+        margin: 5vw;
+    }
+
+    .popup {
+        width: 80%;
+    }
+}

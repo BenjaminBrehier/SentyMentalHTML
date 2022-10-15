@@ -1,0 +1,277 @@
+/*
+    Dernière addition le : 05-01-2021
+    Par : Rafael
+*/
+
+/*Fonts*/
+
+@font-face {
+    font-family: "Questrial";
+    src: url('../fonts/Questrial.ttf');
+}
+
+@font-face {
+    font-family: "Satisfy";
+    src: url('../fonts/Satisfy.ttf');
+}
+
+@font-face {
+    font-family: "Bahnschrift";
+    src: url('../fonts/Bahnschrift.ttf');
+}
+
+/*General*/
+
+body,
+html {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+a,
+p {
+    font-family: "Questrial", Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Satisfy", "Segoe Script", Lucida, cursive;
+}
+
+/* Header */
+
+header,
+menu {
+    z-index: 2;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    float: left;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+    transition: background-color 1s;
+}
+
+.headerscroll {
+    background-color: #fca79c;
+}
+
+#logo>a>span,
+#footerlogo>span {
+    font-family: "Bahnschrift", Arial, Helvetica, sans-serif;
+    font-size: 3vw;
+    font-weight: bold;
+    float: left;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    white-space: nowrap;
+}
+
+#logo {
+    margin: 10px;
+    user-select: none;
+}
+
+header ul {
+    float: right;
+}
+
+header ul li {
+    display: inline-block;
+    margin-top: 5px;
+    margin-right: 30px;
+    font-size: 1.75vw;
+    font-family: "Questrial", Arial, sans-serif;
+
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+/*Dropdown menu*/
+
+header ul li:hover .dd-a,
+header ul li:hover .dd-p,
+.dd-a:hover,
+.dd-p:hover {
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    padding-top: 20px;
+    top: 50px;
+}
+
+.dd-a,
+.dd-p {
+    display: none;
+    width: auto;
+    height: auto;
+    margin-top: 0.5vw;
+}
+
+.dd-a>a,
+.dd-p>a {
+    color: black;
+    background-color: white;
+    font-size: 1.5vw;
+    padding: 1.5vw;
+}
+
+.dd-a>a:hover,
+.dd-p>a:hover {
+    background-color: #f3f3f3;
+}
+
+.actif {
+    border-bottom: 3px solid #ADD8E6;
+}
+
+.whitespace {
+    height: 100px;
+}
+
+/*Footer*/
+
+footer {
+    width: 100%;
+    background-color: #fca79c;
+}
+
+#footerlogo {
+    padding: 3vw;
+    padding-bottom: 1vw;
+    display: flex;
+}
+
+#footerlogo>span {
+    font-size: 20px;
+}
+
+#footertexte {
+    padding: 0px 3vw 3vw 3vw;
+    display: flex;
+}
+
+#footertexte>p {
+    font-size: 15px;
+}
+
+/*Choses mobiles*/
+
+.menuicon {
+    display: none;
+}
+
+menu {
+    display: none;
+}
+
+/*Appels media*/
+
+@media screen and (min-width: 2560px) {
+
+    /*Header*/
+    header {
+        padding: 1.5vw 0px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+
+    /*Header - Menu*/
+
+    header {
+        display: grid;
+        grid-template-columns: 80% 20%;
+        grid-template-rows: 15vw;
+        height: 15vw;
+    }
+
+    .whitespace {
+        height: 15vw;
+    }
+
+    header>nav {
+        display: none;
+    }
+
+    /*Logo*/
+
+    #logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+    }
+
+    #logo>a>span {
+        font-size: 8.5vw;
+    }
+
+    /*Menu*/
+
+    .menuicon {
+        display: flex;
+        color: black;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-start;
+        height: 100%;
+        width: 100%;
+        font-size: 8.5vw;
+    }
+
+    menu {
+        background-color: #FDBFB7;
+        display: none;
+        flex-flow: column;
+        width: 100%;
+    }
+
+    menu>li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 75px;
+        border: 1px black dashed;
+        border-collapse: collapse;
+    }
+
+    menu>li>a {
+        font-size: 35px;
+        font-family: "Questrial";
+        text-decoration: none;
+        color: black;
+    }
+
+    /*Subsections du menu*/
+
+    .tiny>a {
+        font-size: 15px;
+
+    }
+
+    .tiny {
+        height: 40px;
+    }
+
+    /*Footer*/
+
+    #footerlogo {
+        padding-bottom: 3vw;
+    }
+}

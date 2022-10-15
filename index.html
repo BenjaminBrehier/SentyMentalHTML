@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!--En-tête de la page-->
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Sentymental">
+    <meta name="description" content="Sentymental est le premier site français qui permet les particuliers de commander n'importe quel sentiment dans notre catalogue en toute simplicité.">
+    <meta name="keywords" content="sentiments, sentymental, acheter">
+    <meta name="robots" content="
+        index, nofollow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="French">
+    <meta name="revisit-after" content="30 days">
+    <meta name="author" content="Benjamin BREHIER-CARDOSO, Clement GERAUDIE, Rafael BITCA">
+    <title>Accueil | Sentymental</title>
+    <link rel="stylesheet" href="ressources/styles/css/reset.css">
+    <link rel="stylesheet" href="ressources/styles/css/all.css">
+    <link rel="stylesheet" href="ressources/styles/fa/css/all.min.css">
+    <script src="ressources/scripts/js/index.js"></script>
+    <script src="ressources/scripts/js/panier.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="ressources/styles/css/accueil.css">
+    <link rel="icon" type="image/ico" href="favicon.ico">
+    <script>
+        window.caroussel_length = 15
+    </script>
+    <style>
+        .warning {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #b22222bc;
+            color: white;
+            font-size: 1.5vw;
+            text-align: center;
+            padding: 1vw;
+        }
+
+        .warning>p>a {
+            color: black;
+        }
+
+        @media screen and (max-width: 950px) {
+            .warning {
+                font-size: 5vw;
+                padding: 5vw;
+            }
+        }
+    </style>
+</head>
+<!--Corps de la page-->
+
+<body onload="loadpage(); loadPurchase();">
+    <!--Header de la page-->
+
+    <header>
+        <div id="logo">
+            <a href="index.html"><span style="color:#F08080;">SENTY</span><span style="color:#FFFFFF;">MENTAL</span></a>
+        </div>
+        <div class="menuicon">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+            <ul>
+                <li><a id="accueil" href="#">Accueil</a>
+                    <div class="dd-a">
+                        <a href="index.html#">Page principale</a>
+                        <a href="index.html#apropos">À propos de nous</a>
+                        <a href="index.html#contact">Informations générales</a>
+                    </div>
+                </li>
+                <li><a id="produits" href="#">Produits</a>
+                    <div class="dd-p">
+                        <a id="categories" href="categories.html">Catégories</a>
+                        <a id="promotion" href="promotion.html">Promotion</a>
+                    </div>
+                </li>
+                <li><a id="assistance" href="assistance.html">Assistance</a></li>
+                <li><a id="panier" href="panier.html">Mon Panier <i class="fas fa-shopping-basket"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="whitespace"></div>
+    <menu>
+        <li><a id="accueil_m" href="#">Accueil</a></li>
+        <li class="tiny"><a id="landing_m" href="index.html#">Page principale</a></li>
+        <li class="tiny"><a id="apropos_m" href="index.html#apropos">À propos de nous</a></li>
+        <li class="tiny"><a id="contact_m" href="index.html#contact">Informations générales</a></li>
+        <li><a id="produits_m" href="#">Produits</a></li>
+        <li class="tiny"><a id="categories_m" href="categories.html">Catégories</a></li>
+        <li class="tiny"><a id="promotion_m" href="promotion.html">Promotion</a></li>
+        <li><a id="assistance_m" href="assistance.html">Assistance</a></li>
+        <li><a id="panier_m" href="panier.html">Mon Panier</a></li>
+    </menu> <!-- Landing -->
+    <div class="warning">
+        <p>
+            Vous êtes à présent sur la version du site "Rendu CODIN". Pour voir le site avec toutes les fonctionnalités, ainsi que tous les produits dans notre base de données, rendez-vous sur <a target="_blank" href="https://sentymental.fr">sentymental.fr</a>
+        </p>
+    </div>
+    <div id="landing">
+        <div id="barre-recherche">
+            <input disabled placeholder="Rechercher un sentiment" type="search" id="recherche">
+        </div>
+        <div id="caroussel">
+            <div id="caroussel-rectangle">
+                <div class="caroussel-start">
+
+                </div>
+                <div class="caroussel-item" id="item1">
+                    <h1>Mécontentement</h1>
+                    <img alt="Image illustrative du sentiment Mécontentement" width="200" height="200" src="https://cdn.pixabay.com/photo/2017/10/05/15/05/cat-2819678_960_720.jpg">
+                </div>
+                <div class="caroussel-item" id="item2">
+                    <h1>Gourmandise</h1>
+                    <img alt="Image illustrative du sentiment Gourmandise" width="200" height="200" src="https://cdn.pixabay.com/photo/2014/11/17/18/32/bird-of-prey-535008_960_720.jpg">
+                </div>
+                <div class="caroussel-item" id="item3">
+                    <h1>Convoitement</h1>
+                    <img alt="Image illustrative du sentiment Convoitement" width="200" height="200" src="https://actugeekgaming.com/wp-content/uploads/2019/03/Seigneur-des-Anneaux-Gollum-1068x601.jpg">
+                </div>
+                <div class="caroussel-item" id="item4">
+                    <h1>Refus de croire </h1>
+                    <img alt="Image illustrative du sentiment Refus de croire " width="200" height="200" src="https://cdn.pixabay.com/photo/2015/07/13/11/56/girl-843076_960_720.jpg">
+                </div>
+                <div class="caroussel-item" id="item5">
+                    <h1>Comblé</h1>
+                    <img alt="Image illustrative du sentiment Comblé" width="200" height="200" src="https://cdn.pixabay.com/photo/2014/04/02/17/05/couple-307924_960_720.png">
+                </div>
+                <div class="caroussel-item" id="item6">
+                    <h1>Abattement</h1>
+                    <img alt="Image illustrative du sentiment Abattement" width="200" height="200" src="https://cdn.pixabay.com/photo/2013/07/12/15/34/depressed-150107_960_720.png">
+                </div>
+                <div class="caroussel-item" id="item7">
+                    <h1>Jalousie</h1>
+                    <img alt="Image illustrative du sentiment Jalousie" width="200" height="200" src="https://cdn.pixabay.com/photo/2020/04/25/22/47/divorce-5092953_960_720.jpg">
+                </div>
+                <div class="caroussel-item" id="item8">
+                    <h1>Irritation</h1>
+                    <img alt="Image illustrative du sentiment Irritation" width="200" height="200" src="https://cdn.pixabay.com/photo/2018/01/04/21/13/young-3061646_960_720.jpg">
+                </div>
+                <div class="caroussel-item" id="item9">
+                    <h1>Craintif</h1>
+                    <img alt="Image illustrative du sentiment Craintif" width="200" height="200" src="https://cdn.pixabay.com/photo/2014/04/05/11/06/people-314481_960_720.jpg">
+                </div>
+                <div class="caroussel-item" id="item10">
+                    <h1>Anxiété</h1>
+                    <img alt="Image illustrative du sentiment Anxiété" width="200" height="200" src="https://cdn.pixabay.com/photo/2015/01/05/12/58/model-589219_960_720.jpg">
+                </div>
+                <div class="caroussel-item" id="item11">
+                    <h1>Humiliation</h1>
+                    <img alt="Image illustrative du sentiment Humiliation" width="200" height="200" src="https://cdn.pixabay.com/photo/2015/07/27/22/55/girl-863686_960_720.jpg">
+                </div>
+                <div class="caroussel-item" id="item12">
+                    <h1>Démuni</h1>
+                    <img alt="Image illustrative du sentiment Démuni" width="200" height="200" src="https://cdn.pixabay.com/photo/2018/02/11/08/45/people-3145309_960_720.jpg">
+                </div>
+                <div class="caroussel-item" id="item13">
+                    <h1>Rassuré </h1>
+                    <img alt="Image illustrative du sentiment Rassuré " width="200" height="200" src="https://cdn.pixabay.com/photo/2015/01/07/15/51/woman-591576_960_720.jpg">
+                </div>
+                <div class="caroussel-item" id="item14">
+                    <h1>Méfiance</h1>
+                    <img alt="Image illustrative du sentiment Méfiance" width="200" height="200" src="https://cdn.pixabay.com/photo/2019/11/14/12/57/people-4626101_960_720.jpg">
+                </div>
+                <div class="caroussel-item" id="item15">
+                    <h1>Affligé</h1>
+                    <img alt="Image illustrative du sentiment Affligé" width="200" height="200" src="https://cdn.pixabay.com/photo/2018/02/28/10/36/sad-3187671_960_720.jpg">
+                </div>
+                <div class="caroussel-stop">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Landing -->
+    <!-- Informations -->
+    <div id="apropos">
+        <section id="qui">
+            <h2>Qui sommes-nous ?</h2>
+            <p>
+                Sentymental est le premier site français qui permet aux particuliers de commander n'importe quel sentiment dans notre catalogue en toute simplicité : que ça soit l'amour, le mépris ou bien encore la joie.
+            </p>
+            <h3>Notre mission</h3>
+            <p>
+                Notre mission est de rendre ce monde meilleur en respectant trois consignes principales : la satisfaction de la clientèle, la rapidité de la livraison et la meilleur qualité possible pour les sentiments que nous mettons à disposition.
+            </p>
+        </section>
+        <section id="quoi">
+            <h2>Que vendons-nous ?</h2>
+            <p>
+                Les sentiments que nous avons mis en vente sont séparés en 9 catégories.
+            </p>
+            <h3>Quels catégories ?</h3>
+            <p>
+                Vous pourrez retrouver la peur, la tristesse et bien d'autres encore.
+            </p>
+            <h3>Quels sentiments pouvez-vous retrouver ?</h3>
+            <p>
+                Dans ces catégories, vous allez pouvoir retrouver plus de 100 sentiments uniques que vous allez pouvoir commander et recevoir chez vous, sans délai.
+            </p>
+        </section>
+    </div>
+    <div id="contact">
+        <div id="carte">
+            <iframe id="mobile_carte" width="300" height="300" src="https://www.openstreetmap.org/export/embed.html?bbox=2.3161384463310246%2C48.86004754159256%2C2.320601642131806%2C48.8615527456014&amp;layer=mapnik&amp;marker=48.86079926695512%2C2.318370044231415"></iframe>
+            <iframe id="ordi_carte" width="500" height="500" src="https://www.openstreetmap.org/export/embed.html?bbox=2.3161384463310246%2C48.86004754159256%2C2.320601642131806%2C48.8615527456014&amp;layer=mapnik&amp;marker=48.86079926695512%2C2.318370044231415"></iframe>
+            <a target="_blank" href="https://www.openstreetmap.org/?mlat=48.86080&amp;mlon=2.31837#map=19/48.86080/2.31837">Voir carte en plus grand</a>
+        </div>
+        <div id="mobilespacer"></div>
+        <div id="info">
+            <address>
+                Retrouvez-nous:
+                <br>
+                <br>
+                Sentymental
+                <br>
+                404 Rue du Web
+                <br>
+                75007 Paris, France
+                <br>
+                <br>
+                <i class="fa fa-phone"></i> 19 21 68 00 00
+                <br>
+                <i class="fa fa-envelope"></i> info@sentymental.fr
+            </address>
+        </div>
+    </div>
+    <!-- Fin Informations -->
+    <script>
+        window.currentitem = 2;
+        window.autoScrollInterval = setInterval(() => {
+            autoScroll();
+        }, 4000);
+    </script>
+    <footer>
+        <div id="footerlogo">
+            <span style="color:#F08080;">SENTY</span><span style="color:#FFFFFF;">MENTAL</span>
+        </div>
+        <div id="footertexte">
+            <p>
+                Sentymental est un projet créé par Benjamin BREHIER--CARDOSO, Clément GERAUDIE et Denise BITCA dans le cadre du module CODIN
+                à l'IUT d'Orsay. <a target="_blank" href="rapport.pdf">Cliquez ici</a> pour retrouver notre rapport à propos de la création
+                du projet et <a target="_blank" href="presentation.pdf">cliquez ici</a> pour retrouver notre présentation.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
